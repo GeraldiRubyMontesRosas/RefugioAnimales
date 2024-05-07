@@ -19,7 +19,7 @@ const routes: Routes = [
           import('./inicio/inicio.module').then((i) => i.InicioModule),
       },
       {
-        path: 'Tamanos',
+        path: 'Tallas',
         loadChildren: () =>
           import('./tamanos/tamanos.module').then((i) => i.TamanosModule),
       },
