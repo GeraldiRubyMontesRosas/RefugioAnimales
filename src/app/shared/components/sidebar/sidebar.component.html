@@ -28,12 +28,16 @@
                         <div class="dropdown-menu-column">
                             <a *appHasClaim="'CanAccessDashboard'" class="dropdown-item" [routerLink]="['Tallas']" routerLinkActive="active" #rlDashboard="routerLinkActive" (click)="cerrarMenu()">
                                 <span class="nav-link-icon d-md-none d-lg-inline-block">
-                  <i class="ti ti-chart-infographic"></i>
+                                    <i class="ti ti-ruler-2"></i>
                 </span>
                                 <span class="nav-link-title">Tallas</span>
                             </a>
-                           
-
+                            <a *appHasClaim="'CanAccessDashboard'" class="dropdown-item" [routerLink]="['Especies']" routerLinkActive="active" #rlDashboard="routerLinkActive" (click)="cerrarMenu()">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="ti ti-alien"></i>
+                </span>
+                                <span class="nav-link-title">Especies</span>
+                            </a>
                         </div>
                     </div>
                 </ul>

@@ -23,6 +23,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./tamanos/tamanos.module').then((i) => i.TamanosModule),
       },
+      {
+        path: 'Especies',
+        loadChildren: () =>
+          import('./especies/especies.module').then((i) => i.EspeciesModule),
+      },
       
     ],
   },
